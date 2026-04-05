@@ -22,7 +22,7 @@ const TablePage = () =>{
 
     // clear input
     setOrderNumber("");
-    toast.success(`Order no. ${createdOrderobj.orderNumber} is saved for table No. ${createdOrderobj.table}`)
+    toast.warning(`Order no. ${createdOrderobj.orderNumber} is saved for table No. ${createdOrderobj.table}`)
     }
 
 
