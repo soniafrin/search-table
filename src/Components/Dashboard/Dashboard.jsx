@@ -30,6 +30,7 @@ const handleMarkOrder = (ind) =>{
     console.log(ind);
     const removeMarkedOrder = allOrders.filter((order, index) => index !== ind)
     setAllOrders(removeMarkedOrder)
+    localStorage.setItem('existingOrderNums',JSON.stringify(removeMarkedOrder))
     toast.warning("order is removed")
     // console.log(removeMarkedOrder);
 }
