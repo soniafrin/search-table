@@ -13,7 +13,7 @@ const TablePage = () =>{
         const createdOrderobj = {
             orderNumber,
             table: id,
-            // id: Math.random()
+            id: Math.random()
         }
 // add to existing order Number 
         const updatedTypedOrderNum = [...existingOrderNums, createdOrderobj]
@@ -31,7 +31,7 @@ const TablePage = () =>{
     const {id} = useParams();
     const [orderNumber, setOrderNumber] = useState("");
     return(
-        <div className="w-5/12 mx-auto text-center mt-22 h-80 space-y-5 rounded-xl p-5 shadow-lg bg-[#F5EFE0]">
+        <div className="w-5/12 mx-auto text-center mt-22 h-80 space-y-5 rounded-xl p-5 text-black shadow-lg bg-[#F5EFE0]">
             <h1 className="font-bold text-xl  ">Table No. {id}</h1>
             <input
             className="bg-gray-200 border border-gray-500 py-2 px-3 rounded-xl"

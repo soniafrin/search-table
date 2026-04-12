@@ -5,9 +5,13 @@ import { Route, Routes, Link } from 'react-router-dom';
 import Dashboard from './Components/Dashboard/Dashboard';
 import TablePage from './Components/TablePage/TablePage';
 import bgImg from './assets/hero.jpg'
+import MarkedOrder from './Components/MarkedOrder/MarkedOrder';
+import { useState } from 'react';
 
 function App() {
   const isStaff = false;
+
+  
 
   return (
     <>
@@ -18,9 +22,9 @@ function App() {
       <Link className='bg-[#A3824C] rounded-full px-4 py-2 font-medium text-white' to='/tablepage/1'>Table Page</Link>
     </nav>
         <Routes>
-          <Route path='/dash' element={<Dashboard/>}></Route>
+          <Route path='/dash' element={<Dashboard />}></Route>
           <Route path='/tablepage/:id' element={<TablePage/>}></Route>
-          <Route path='*' element={"hello0000000000"}></Route>
+          <Route path='/markedorder' element={<MarkedOrder/>}></Route>
         </Routes>
     </div>
 
